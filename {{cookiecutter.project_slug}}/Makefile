@@ -7,7 +7,9 @@
 all: build
 
 build:
-	meson build . && meson compile -C build -v
+	meson build . \
+	  -Dtests=false && \
+	  meson compile -C build -v
 
 debug:
 	meson build . --buildtype debug \
@@ -31,8 +33,7 @@ format:
 	clang-format -i tests/*cpp
 
 lint:
-	cpplint --filter=-legal/copyright,-readability/casting,-whitespace/comments,-build/include_subdir \
-	  src/*.cpp include/*.hpp
+	cpplint --filter=-legal/copyright,-readability/casting,-whitespace/braces,-whitespace/indent,-build/include_subdir,-whitespace/line_length src/*.cpp include/*.hpp tests/*cpp
 
 check:
 	cppcheck src/*.cpp include/*.hpp

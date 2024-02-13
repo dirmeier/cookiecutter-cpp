@@ -1,6 +1,6 @@
 #include "clazz.hpp"
 
-void clazz::add(int k) {
-  for (auto& el : vec_)
-    el += k;
+void clazz::add(int k)
+{
+    std::transform(vec_.begin(), vec_.end(), vec_.begin(), [&](const auto& v) { return v + k; });
 }

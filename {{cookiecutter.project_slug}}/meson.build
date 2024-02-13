@@ -1,11 +1,11 @@
 project(
   '{{cookiecutter.project_slug}}',
   'cpp',
-  version : '0.1.0',
+  version : '{{cookiecutter.project_version}}',
   default_options : [
     'buildtype=release',
     'warning_level=3',
-    'cpp_std=c++17',
+    'cpp_std=c++20',
     'b_ndebug=if-release'],
   meson_version : '>= 0.52.0')
 
