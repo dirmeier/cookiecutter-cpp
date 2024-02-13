@@ -9,7 +9,7 @@ cppdev_test_cpp_sources = files([
 ])
 
 cppdev_test = executable(
-  'cppdev_test',
+  '{{ cookiecutter.project_slug }}_test',
   cppdev_test_cpp_sources,
   cpp_args : warning_flags,
   dependencies : [gtest_dep],
@@ -18,4 +18,4 @@ cppdev_test = executable(
   link_with : [cppdev_lib],
 )
 
-test('cppdev test', cppdev_test)
+test('{{ cookiecutter.project_slug }} test', cppdev_test)

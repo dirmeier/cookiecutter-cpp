@@ -22,7 +22,7 @@ jobs:
         run: |
           wget https://github.com/google/googletest/archive/refs/tags/v1.14.0.tar.gz
           mkdir googletest
-          tar -zxvf googletest-1.14.0.tar.gz -C googletest --strip-components 1
+          tar -zxvf v1.14.0.tar.gz -C googletest --strip-components 1
           mkdir -p googletest/build
           cd googletest/build
           cmake .. && make && sudo make install

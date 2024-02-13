@@ -3,7 +3,7 @@ lib_sources = [
 ]
 
 cppdev_lib = library(
-  'cppdev',
+  '{{ cookiecutter.project_slug }}',
   lib_sources,
   include_directories: inc,
   cpp_args : warning_flags

@@ -43,13 +43,13 @@ endif
 
 
 if get_option('executable')
-  cppdev_cpp_sources = files([
+  {{ cookiecutter.project_slug }}_cpp_sources = files([
     'src/main.cpp'
   ])
 
-  lsbn_exe = executable(
-    'cppdev',
-    cppdev_cpp_sources,
+  {{ cookiecutter.project_slug }}_exe = executable(
+    '{{ cookiecutter.project_slug }}',
+    {{ cookiecutter.project_slug }}_cpp_sources,
     cpp_args : warning_flags,
     include_directories : inc,
     link_with : [cppdev_lib],
