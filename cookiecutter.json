@@ -2,10 +2,9 @@
   "full_name": "Simon Dirmeier",
   "email": "sfyrbnd @ pm me",
   "github_username": "dirmeier",
-  "project_name": "C++ library template",
-  "project_short_description": "A C++ library that does nothing so far",
-  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
-  "pypi_username": "{{ cookiecutter.github_username }}",
+  "project_readme_title": "C++ library template",
+  "project_short_description": "Sentence that is used as description of the project",
+  "project_slug": "Something like 'rap'",
   "version": "0.0.1",
   "_copy_without_render": [
       "**/workflows/*.yaml"

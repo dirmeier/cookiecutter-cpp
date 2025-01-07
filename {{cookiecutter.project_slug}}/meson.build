@@ -1,7 +1,7 @@
 project(
   '{{cookiecutter.project_slug}}',
   'cpp',
-  version : '{{cookiecutter.project_version}}',
+  version : '{{cookiecutter.version}}',
   default_options : [
     'buildtype=release',
     'warning_level=3',

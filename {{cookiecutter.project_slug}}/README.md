@@ -1,4 +1,4 @@
-# {{ cookiecutter.project_name }}
+# {{ cookiecutter.project_readme_title }}
 
 [![Project
 Status](http://www.repostatus.org/badges/latest/concept.svg)](http://www.repostatus.org/#concept)

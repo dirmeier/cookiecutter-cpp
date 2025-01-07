@@ -1,7 +1,7 @@
 # Doxyfile 1.8.20
 
 DOXYFILE_ENCODING      = UTF-8
-PROJECT_NAME           = "{{ cookiecutter.project_name }}"
+PROJECT_NAME           = "{{ cookiecutter.project_readme_title }}"
 
 # The PROJECT_NUMBER tag can be used to enter a project or revision number. This
 # could be handy for archiving the generated documentation or if some version
