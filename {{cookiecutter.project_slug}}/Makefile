@@ -8,7 +8,7 @@ all: build
 
 build:
 	meson build . \
-	  -Dtests=false && \
+	  -Dtests=true && \
 	  meson compile -C build -v
 
 debug:

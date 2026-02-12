@@ -12,11 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v3
-      - name: Setup
-        run: |
-          sudo apt-get install cppcheck
-          python -m pip install --upgrade pip
-          pip install cpplint
       - uses: pre-commit/action@v3.0.0
 
   build:
@@ -79,7 +74,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install cpplint meson ninja
+          pip install cpplint meson ninja cppcheck
       - name: Run lints
         run: |
           make lint
+          make check
